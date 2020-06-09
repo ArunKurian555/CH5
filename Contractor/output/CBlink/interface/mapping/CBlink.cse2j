@@ -1,0 +1,137 @@
+{
+	"name": "CBlink",
+	"timestamp": "2020-06-02 17:07:42.527",
+	"version": "1.0.0.0",
+	"schema_version": 1,
+	"extra_value": "",
+	"signals": {
+		"states": {
+			"boolean": {
+				"1": {
+					"1": "Area.AreaSelected0",
+					"2": "Area.AreaSelected1",
+					"3": "Area.AreaSelected2",
+					"4": "Area.AreaSelected3",
+					"5": "Area.AreaSelected4",
+					"6": "Area.AreaSelected5",
+					"7": "Area.AreaSelected6",
+					"8": "Area.AreaSelected7",
+					"9": "Area.AreaSelected8",
+					"10": "Area.AreaSelected9",
+					"11": "Area.AreaSelected10"
+				}
+			},
+			"numeric": {
+				"1": {
+					"1": "Area.Size"
+				}
+			},
+			"string": {
+				"1": {
+					"1": "Area.ActiveArea",
+					"2": "Area.AreaName0",
+					"3": "Area.AreaName1",
+					"4": "Area.AreaName2",
+					"5": "Area.AreaName3",
+					"6": "Area.AreaName4",
+					"7": "Area.AreaName5",
+					"8": "Area.AreaName6",
+					"9": "Area.AreaName7",
+					"10": "Area.AreaName8",
+					"11": "Area.AreaName9",
+					"12": "Area.AreaName10"
+				},
+				"2": {
+					"1": "Scenes.ScenesName0",
+					"2": "Scenes.ScenesName1",
+					"3": "Scenes.ScenesName2",
+					"4": "Scenes.ScenesName3",
+					"5": "Scenes.ScenesName4",
+					"6": "Scenes.ScenesName5",
+					"7": "Scenes.ScenesName6",
+					"8": "Scenes.ScenesName7"
+				}
+			}
+		},
+		"events": {
+			"boolean": {
+				"Area.AreaSelect0": {
+					"joinId": 1,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect1": {
+					"joinId": 2,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect2": {
+					"joinId": 3,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect3": {
+					"joinId": 4,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect4": {
+					"joinId": 5,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect5": {
+					"joinId": 6,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect6": {
+					"joinId": 7,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect7": {
+					"joinId": 8,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect8": {
+					"joinId": 9,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect9": {
+					"joinId": 10,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect10": {
+					"joinId": 11,
+					"smartObjectId": 1
+				},
+				"Scenes.Scenes0": {
+					"joinId": 1,
+					"smartObjectId": 2
+				},
+				"Scenes.Scenes1": {
+					"joinId": 2,
+					"smartObjectId": 2
+				},
+				"Scenes.Scenes2": {
+					"joinId": 3,
+					"smartObjectId": 2
+				},
+				"Scenes.Scenes3": {
+					"joinId": 4,
+					"smartObjectId": 2
+				},
+				"Scenes.Scenes4": {
+					"joinId": 5,
+					"smartObjectId": 2
+				},
+				"Scenes.Scenes5": {
+					"joinId": 6,
+					"smartObjectId": 2
+				},
+				"Scenes.Scenes6": {
+					"joinId": 7,
+					"smartObjectId": 2
+				},
+				"Scenes.Scenes7": {
+					"joinId": 8,
+					"smartObjectId": 2
+				}
+			}
+		}
+	}
+}

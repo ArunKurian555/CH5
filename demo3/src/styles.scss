@@ -1,0 +1,237 @@
+/* You can add global styles to this file, and also import other style files */
+
+body
+{
+ font-family: sans-serif; 
+  background: url("./assets/img/giphy1.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text
+{
+font-weight: 350;
+font-size: x-large;
+margin: 0 0 0 0;
+padding: .2em 1em .2em 0 ;
+}
+
+.ch5-button--default {
+    border: 0px solid #0091ea !important;
+    background-color: transparent !important;
+    color:inherit !important;
+}
+
+#areas,#scene{
+  width: 12em!important;
+  .list-item{
+        padding: 0.2em !important;
+   background-color: rgba(255, 255, 255, 0) !important;
+    border: 0;
+    
+font-weight: 350;
+
+font-size: larger;
+
+   .cb-btn
+   {
+     font-size: large;
+   }
+
+  }
+}
+//////////////////////////
+/////////////////////////
+/////////////////////////
+
+#loadscroll {
+  .list-item:nth-child(odd) {
+    padding: 0.2em !important;
+    background-color: rgb(255, 255, 255) !important;
+    border: 0;
+
+    .noUi-marker {
+      height: 8px;
+    }
+
+    .noUi-value-horizontal {
+      transform: translate(-50%, 3%);
+      color: rgb(0, 0, 0);
+    }
+    .noUi-target {
+      height: 0.9em;
+    }
+
+    .noUi-tooltip {
+      padding: 0.1em 0.1em 0.1em 0.1em;
+      border: 0;
+      background-color: transparent;
+    }
+    #leftbutton {
+      .ch5-button--primary {
+        background-color: rgb(36, 36, 36);
+      }
+    }
+
+    #rightbutton {
+      .ch5-button--primary {
+        background-color: rgb(105, 104, 104);
+      }
+    }
+
+    .cb-icon {
+      color: white !important;
+    }
+    
+   .noUi-connect
+   {
+     background: rgb(69, 134, 255); 
+   }
+  }
+
+  .list-item:nth-child(even) {
+    padding: 0.2em !important;
+    background-color: rgba(255, 255, 255, 0.76) !important;
+    border: 0;
+    
+    .noUi-marker {
+      height: 8px;
+    }
+
+    .noUi-value-horizontal {
+      transform: translate(-50%, 3%);
+      color: rgb(0, 0, 0);
+    }
+    .noUi-target {
+      height: 0.9em;
+    }
+
+    .noUi-tooltip {
+      padding: 0.1em 0.1em 0.1em 0.1em;
+      border: 0;
+      background-color: transparent;
+    }
+    #leftbutton {
+      .ch5-button--primary {
+        background-color: rgb(36, 36, 36);
+      }
+    }
+
+    #rightbutton {
+      .ch5-button--primary {
+        background-color: rgb(105, 104, 104);
+      }
+    }
+
+    .cb-icon {
+      color: white !important;
+    }
+    
+   .noUi-connect
+   {
+     background: rgb(69, 134, 255); 
+   }
+  }
+}
+
+
+
+
+
+
+
+///////////////////////////
+////////////////////////////
+
+.loads
+{
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  justify-items: center;
+  align-items: center;
+    border: 0;
+margin: 2px;
+  padding: 0.7em;
+}
+  .loads:nth-child(odd) {
+    background-color: rgb(255, 255, 255) !important;
+  
+    .noUi-marker {
+      height: 8px;
+    }
+
+    .noUi-value-horizontal {
+      transform: translate(-50%, 3%);
+      color: rgb(0, 0, 0);
+    }
+    .noUi-target {
+      height: 0.9em;
+    }
+
+    .noUi-tooltip {
+      padding: 0.1em 0.1em 0.1em 0.1em;
+      border: 0;
+      background-color: transparent;
+    }
+    #leftbutton {
+      .ch5-button--primary {
+        background-color: rgb(36, 36, 36);
+      }
+    }
+
+    #rightbutton {
+      .ch5-button--primary {
+        background-color: rgb(105, 104, 104);
+      }
+    }
+
+    .cb-icon {
+      color: white !important;
+    }
+    
+   .noUi-connect
+   {
+     background: rgb(69, 134, 255); 
+   }
+  }
+ .loads:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.76) !important;
+
+    
+    .noUi-marker {
+      height: 8px;
+    }
+
+    .noUi-value-horizontal {
+      transform: translate(-50%, 3%);
+      color: rgb(0, 0, 0);
+    }
+    .noUi-target {
+      height: 0.9em;
+    }
+
+    .noUi-tooltip {
+      padding: 0.1em 0.1em 0.1em 0.1em;
+      border: 0;
+      background-color: transparent;
+    }
+    #leftbutton {
+      .ch5-button--primary {
+        background-color: rgb(36, 36, 36);
+      }
+    }
+
+    #rightbutton {
+      .ch5-button--primary {
+        background-color: rgb(105, 104, 104);
+      }
+    }
+
+    .cb-icon {
+      color: white !important;
+    }
+    
+   .noUi-connect
+   {
+     background: rgb(69, 134, 255); 
+   }
+  }
