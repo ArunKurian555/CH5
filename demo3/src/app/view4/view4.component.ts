@@ -9,7 +9,8 @@ export class View4Component implements OnInit {
 
   constructor() { }
 
+  htmlVariable: string = "<b>Some html.</b>";
   ngOnInit(): void {
-  }
 
+  }
 }
