@@ -34,7 +34,8 @@
                 iconClass="fas fa-lightbulb fa-3x" iconPosition="top" size="x-small"
                 sendEventOnClick="{{activeZones[idx]*10-9}}">
             </ch5-button>
-            <div *ngIf="DMXactive[idx] == 1" [innerHtml]="htmlToAdd" (click)="DMXcall(activeZones[idx])">
+            <div [ngStyle]="dmxfb[activeZones[idx]-1]" *ngIf="DMXactive[activeZones[idx]-1] == 1"
+                [innerHtml]="htmlToAdd" (click)="DMXcall(activeZones[idx])">
             </div>
         </div>
     </cdk-virtual-scroll-viewport>

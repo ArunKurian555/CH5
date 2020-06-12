@@ -271,3 +271,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   font-size: 1em !important;
   color: black !important;
 }
+
+.mat-dialog-container{
+ background-color: whitesmoke;
+ padding: 0 !important;
+ width: auto !important; 
+}
+.cdk-overlay-pane
+{
+  justify-content: center;
+}

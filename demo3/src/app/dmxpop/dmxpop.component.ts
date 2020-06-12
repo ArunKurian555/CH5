@@ -1,6 +1,8 @@
 import { ColorEvent } from 'ngx-color';
 import { Component, OnInit } from '@angular/core';
 
+declare var CrComLib: any;
+
 @Component({
   selector: 'app-dmxpop',
   templateUrl: './dmxpop.component.html',
@@ -14,21 +16,9 @@ export class DmxpopComponent implements OnInit {
   }
 
   handleChange($event: ColorEvent) {
-    // color = {
-    //   hex: '#333',
-    //   rgb: {
-    //     r: 51,
-    //     g: 51,
-    //     b: 51,
-    //     a: 1,
-    //   },
-    //   hsl: {
-    //     h: 0,
-    //     s: 0,
-    //     l: .20,
-    //     a: 1,
-    //   },
-    // }
+    CrComLib.publishEvent('n', '121', $event.color.rgb.r);
+    CrComLib.publishEvent('n', '122', $event.color.rgb.g);
+    CrComLib.publishEvent('n', '123', $event.color.rgb.b);
   }
 
 
