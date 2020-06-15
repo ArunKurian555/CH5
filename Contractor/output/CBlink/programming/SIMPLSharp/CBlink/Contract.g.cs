@@ -28,6 +28,9 @@ namespace CBlink
         public CBlink.IScenes Scenes { get { return (CBlink.IScenes)InternalScenes; } }
         private CBlink.Scenes InternalScenes { get; set; }
 
+        public CBlink.IZones Zones { get { return (CBlink.IZones)InternalZones; } }
+        private CBlink.Zones InternalZones { get; set; }
+
         #endregion
 
         #region Construction and Initialization
@@ -51,6 +54,7 @@ namespace CBlink
 
             InternalArea = new CBlink.Area(ComponentMediator, 1);
             InternalScenes = new CBlink.Scenes(ComponentMediator, 2);
+            InternalZones = new CBlink.Zones(ComponentMediator, 3);
 
             for (int index = 0; index < devices.Length; index++)
             {
@@ -68,12 +72,14 @@ namespace CBlink
         {
             InternalArea.AddDevice(device);
             InternalScenes.AddDevice(device);
+            InternalZones.AddDevice(device);
         }
 
         public void RemoveDevice(BasicTriListWithSmartObject device)
         {
             InternalArea.RemoveDevice(device);
             InternalScenes.RemoveDevice(device);
+            InternalZones.RemoveDevice(device);
         }
 
         #endregion
@@ -91,6 +97,7 @@ namespace CBlink
 
             InternalArea.Dispose();
             InternalScenes.Dispose();
+            InternalZones.Dispose();
             ComponentMediator.Dispose(); 
         }
 

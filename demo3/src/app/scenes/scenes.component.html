@@ -22,13 +22,11 @@
         iconClass="far fa-lightbulb fa-3x" iconPosition="top" sendEventOnClick="{{activeZones[idx]*10-8}}">
       </ch5-button>
       <div class="container">
-        <p id="Zonename"> Zone {{activeZones[idx]}} </p>
-
+        <p id="Zonename">{{activezonelabel[activeZones[idx]]}}</p>
         <ch5-slider stretch="width" handleShape="circle" toolTipShowType="auto" orientation="horizontal"
           tapSettable="true" toolTipShowType="on" style="padding: 1em 2em 2em 2em;"
           sendEventOnChange="{{activeZones[idx]}}" receiveStateValue="{{activeZones[idx]}}">
         </ch5-slider>
-
       </div>
       <ch5-button class="load-button" id="rightbutton" type="primary" shape="circle" iconClass="fas fa-lightbulb fa-3x"
         iconPosition="top" size="x-small" sendEventOnClick="{{activeZones[idx]*10-9}}">
