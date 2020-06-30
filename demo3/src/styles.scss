@@ -1,9 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import "~animate.css/animate.min";
+
 body
 {
  font-family: sans-serif; 
-  background: url("./assets/img/giphy1.gif");
+  background: url("./assets/img/teal2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -21,7 +23,31 @@ padding: .2em 1em .2em 0 ;
     color:inherit !important;
 }
 
-#areas,#scene{
+#areas
+{
+  width: 19em!important;
+  .list-item{
+        padding: 0.2em !important;
+   background-color: rgba(255, 255, 255, 0) !important;
+    border: 0;
+    
+font-weight: 350;
+
+font-size: larger;
+
+   .cb-btn
+   {
+     .cb-lbl
+     {
+           font-size: 2em;
+
+     }
+   
+  }
+
+  }
+}
+#scene{
   width: 12em!important;
   .list-item{
         padding: 0.2em !important;
@@ -280,4 +306,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .cdk-overlay-pane
 {
   justify-content: center;
+}
+
+
+.cdk-virtual-scroll-content-wrapper
+{
+  padding: 1em;
+}
+
+.swiper-wrapper
+{
+  transition-duration: 1000ms !important;
 }

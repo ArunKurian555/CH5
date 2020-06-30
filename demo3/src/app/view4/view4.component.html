@@ -1,1 +1,12 @@
-<h1>COMING SOON</h1>
+<cdk-virtual-scroll-viewport id="loadscroll" itemSize="120" class=" scroller">
+    <div *cdkVirtualFor="let item of activeZones; let idx = index" class="loads">
+        <ch5-button id="leftbutton" class="load-button" type="primary" shape="circle" size="x-small"
+            iconClass="far fa-lightbulb fa-3x" iconPosition="top" sendEventOnClick="{{activeZones[idx]*10-8}}">
+        </ch5-button>
+        <div class="container">
+            <p id="Zonename"></p>
+            <mat-slider [(ngModel)]="myModel[idx]" thumbLabel [displayWith]="formatLabel" min="1" max="65535">
+            </mat-slider>
+        </div>
+    </div>
+</cdk-virtual-scroll-viewport>

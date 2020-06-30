@@ -1,14 +1,22 @@
 
+.AreaSelect{
+width: 100%;
+}
+
+mat-slider {
+  width: 100%;
+}
 .dmxfb
 {
 width: 2.5em;
 height: 2.5em;
 border: solid; 
 border-width: 2px;
+    padding: 1.4em;
 }
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 3.5fr 1fr;
+  grid-template-columns: 3.5fr 1fr;
   height: 75vh;
   align-items: center;
   justify-items: center;
@@ -32,7 +40,7 @@ border-width: 2px;
 
 .chheader
 {
-font-weight: 300;
+font-weight: 400;
 font-size: 2em;
 margin: 0 0 0 0;
 padding: .2em 1em .2em 0 ;
@@ -57,4 +65,12 @@ width: 100%;
 #Zonename
 {
   text-align: center;
+}
+
+.RL
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+margin-top: .5rem;
 }

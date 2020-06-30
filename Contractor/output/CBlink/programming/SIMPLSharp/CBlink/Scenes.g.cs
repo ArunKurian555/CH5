@@ -18,7 +18,33 @@ namespace CBlink
         event EventHandler<UIEventArgs> Scenes5;
         event EventHandler<UIEventArgs> Scenes6;
         event EventHandler<UIEventArgs> Scenes7;
+        event EventHandler<UIEventArgs> Scenes8;
+        event EventHandler<UIEventArgs> Scenes9;
+        event EventHandler<UIEventArgs> Scenes10;
+        event EventHandler<UIEventArgs> Scenes11;
+        event EventHandler<UIEventArgs> Scenes12;
+        event EventHandler<UIEventArgs> Scenes13;
+        event EventHandler<UIEventArgs> Scenes14;
+        event EventHandler<UIEventArgs> Scenes15;
+        event EventHandler<UIEventArgs> Raise;
+        event EventHandler<UIEventArgs> Lower;
 
+        void Scenefb0(ScenesBoolInputSigDelegate callback);
+        void Scenefb1(ScenesBoolInputSigDelegate callback);
+        void Scenefb2(ScenesBoolInputSigDelegate callback);
+        void Scenefb3(ScenesBoolInputSigDelegate callback);
+        void Scenefb4(ScenesBoolInputSigDelegate callback);
+        void Scenefb5(ScenesBoolInputSigDelegate callback);
+        void Scenefb6(ScenesBoolInputSigDelegate callback);
+        void Scenefb7(ScenesBoolInputSigDelegate callback);
+        void Scenefb8(ScenesBoolInputSigDelegate callback);
+        void Scenefb9(ScenesBoolInputSigDelegate callback);
+        void Scenefb10(ScenesBoolInputSigDelegate callback);
+        void Scenefb11(ScenesBoolInputSigDelegate callback);
+        void Scenefb12(ScenesBoolInputSigDelegate callback);
+        void Scenefb13(ScenesBoolInputSigDelegate callback);
+        void Scenefb14(ScenesBoolInputSigDelegate callback);
+        void Scenefb15(ScenesBoolInputSigDelegate callback);
         void ScenesName0(ScenesStringInputSigDelegate callback);
         void ScenesName1(ScenesStringInputSigDelegate callback);
         void ScenesName2(ScenesStringInputSigDelegate callback);
@@ -62,10 +88,37 @@ namespace CBlink
                 public const uint Scenes5 = 6;
                 public const uint Scenes6 = 7;
                 public const uint Scenes7 = 8;
+                public const uint Scenes8 = 9;
+                public const uint Scenes9 = 10;
+                public const uint Scenes10 = 11;
+                public const uint Scenes11 = 12;
+                public const uint Scenes12 = 13;
+                public const uint Scenes13 = 14;
+                public const uint Scenes14 = 15;
+                public const uint Scenes15 = 16;
+                public const uint Raise = 17;
+                public const uint Lower = 18;
 
+                public const uint Scenefb0 = 19;
+                public const uint Scenefb1 = 20;
+                public const uint Scenefb2 = 21;
+                public const uint Scenefb3 = 22;
+                public const uint Scenefb4 = 23;
+                public const uint Scenefb5 = 24;
+                public const uint Scenefb6 = 25;
+                public const uint Scenefb7 = 26;
+                public const uint Scenefb8 = 27;
+                public const uint Scenefb9 = 28;
+                public const uint Scenefb10 = 29;
+                public const uint Scenefb11 = 30;
+                public const uint Scenefb12 = 31;
+                public const uint Scenefb13 = 32;
+                public const uint Scenefb14 = 33;
+                public const uint Scenefb15 = 34;
             }
             internal static class Strings
             {
+
                 public const uint ScenesName0 = 1;
                 public const uint ScenesName1 = 2;
                 public const uint ScenesName2 = 3;
@@ -101,6 +154,16 @@ namespace CBlink
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Scenes5, onScenes5);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Scenes6, onScenes6);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Scenes7, onScenes7);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Scenes8, onScenes8);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Scenes9, onScenes9);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Scenes10, onScenes10);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Scenes11, onScenes11);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Scenes12, onScenes12);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Scenes13, onScenes13);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Scenes14, onScenes14);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Scenes15, onScenes15);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Raise, onRaise);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Lower, onLower);
 
         }
 
@@ -182,6 +245,215 @@ namespace CBlink
             EventHandler<UIEventArgs> handler = Scenes7;
             if (handler != null)
                 handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+        public event EventHandler<UIEventArgs> Scenes8;
+        private void onScenes8(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = Scenes8;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+        public event EventHandler<UIEventArgs> Scenes9;
+        private void onScenes9(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = Scenes9;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+        public event EventHandler<UIEventArgs> Scenes10;
+        private void onScenes10(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = Scenes10;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+        public event EventHandler<UIEventArgs> Scenes11;
+        private void onScenes11(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = Scenes11;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+        public event EventHandler<UIEventArgs> Scenes12;
+        private void onScenes12(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = Scenes12;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+        public event EventHandler<UIEventArgs> Scenes13;
+        private void onScenes13(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = Scenes13;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+        public event EventHandler<UIEventArgs> Scenes14;
+        private void onScenes14(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = Scenes14;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+        public event EventHandler<UIEventArgs> Scenes15;
+        private void onScenes15(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = Scenes15;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+        public event EventHandler<UIEventArgs> Raise;
+        private void onRaise(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = Raise;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+        public event EventHandler<UIEventArgs> Lower;
+        private void onLower(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = Lower;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+
+        public void Scenefb0(ScenesBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Scenefb0], this);
+            }
+        }
+
+        public void Scenefb1(ScenesBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Scenefb1], this);
+            }
+        }
+
+        public void Scenefb2(ScenesBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Scenefb2], this);
+            }
+        }
+
+        public void Scenefb3(ScenesBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Scenefb3], this);
+            }
+        }
+
+        public void Scenefb4(ScenesBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Scenefb4], this);
+            }
+        }
+
+        public void Scenefb5(ScenesBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Scenefb5], this);
+            }
+        }
+
+        public void Scenefb6(ScenesBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Scenefb6], this);
+            }
+        }
+
+        public void Scenefb7(ScenesBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Scenefb7], this);
+            }
+        }
+
+        public void Scenefb8(ScenesBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Scenefb8], this);
+            }
+        }
+
+        public void Scenefb9(ScenesBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Scenefb9], this);
+            }
+        }
+
+        public void Scenefb10(ScenesBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Scenefb10], this);
+            }
+        }
+
+        public void Scenefb11(ScenesBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Scenefb11], this);
+            }
+        }
+
+        public void Scenefb12(ScenesBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Scenefb12], this);
+            }
+        }
+
+        public void Scenefb13(ScenesBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Scenefb13], this);
+            }
+        }
+
+        public void Scenefb14(ScenesBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Scenefb14], this);
+            }
+        }
+
+        public void Scenefb15(ScenesBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Scenefb15], this);
+            }
         }
 
 
@@ -284,6 +556,16 @@ namespace CBlink
             Scenes5 = null;
             Scenes6 = null;
             Scenes7 = null;
+            Scenes8 = null;
+            Scenes9 = null;
+            Scenes10 = null;
+            Scenes11 = null;
+            Scenes12 = null;
+            Scenes13 = null;
+            Scenes14 = null;
+            Scenes15 = null;
+            Raise = null;
+            Lower = null;
         }
 
         #endregion

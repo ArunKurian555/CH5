@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { MatSliderChange } from '@angular/material/slider';
 
 declare var CrComLib: any;
 @Component({
@@ -10,8 +11,18 @@ declare var CrComLib: any;
 
 export class View4Component implements OnInit {
   constructor() { }
+  myModel = [];
 
-  ngOnInit(): void {
+  activeZones = [1, 3, 5, 7, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
+
+  formatLabel(value: number) {
+    if (value >= 655) {
+      return Math.round(value / 655.35) + '%';
+    }
+    return value;
   }
+  ngOnInit(): void {
 
+
+  }
 }

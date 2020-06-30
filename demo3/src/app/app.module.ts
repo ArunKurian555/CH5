@@ -19,11 +19,14 @@ import { DmxpopComponent } from './dmxpop/dmxpop.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
-import { ColorChromeModule } from 'ngx-color/chrome'; // <color-chrome></color-chrome>
+import { ColorChromeModule } from 'ngx-color/chrome';
+import { MatSliderModule } from '@angular/material/slider';
+import { AreapopComponent } from './areapop/areapop.component'; // <color-chrome></color-chrome>
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, ScenesComponent, UtilitiesComponent, View3Component, View4Component, View5Component, DmxpopComponent],
-  imports: [BrowserModule, FontAwesomeModule, ScrollingModule, ColorSketchModule, NoopAnimationsModule, BrowserAnimationsModule, MatDialogModule, ColorChromeModule],
+  declarations: [AppComponent, ScenesComponent, UtilitiesComponent, View3Component, View4Component, View5Component, DmxpopComponent, AreapopComponent],
+  imports: [BrowserModule, FontAwesomeModule, ScrollingModule, ColorSketchModule, NoopAnimationsModule, BrowserAnimationsModule, MatDialogModule, ColorChromeModule, MatSliderModule, FormsModule],
   providers: [
     { provide: APP_BASE_HREF, useValue: './' },
     ChRouteService,

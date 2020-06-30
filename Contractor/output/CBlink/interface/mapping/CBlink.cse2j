@@ -1,6 +1,6 @@
 {
 	"name": "CBlink",
-	"timestamp": "2020-06-15 10:45:00.356",
+	"timestamp": "2020-06-29 15:38:12.425",
 	"version": "1.0.0.0",
 	"schema_version": 1,
 	"extra_value": "",
@@ -19,6 +19,24 @@
 					"9": "Area.AreaSelected8",
 					"10": "Area.AreaSelected9",
 					"11": "Area.AreaSelected10"
+				},
+				"2": {
+					"19": "Scenes.Scenefb0",
+					"20": "Scenes.Scenefb1",
+					"21": "Scenes.Scenefb2",
+					"22": "Scenes.Scenefb3",
+					"23": "Scenes.Scenefb4",
+					"24": "Scenes.Scenefb5",
+					"25": "Scenes.Scenefb6",
+					"26": "Scenes.Scenefb7",
+					"27": "Scenes.Scenefb8",
+					"28": "Scenes.Scenefb9",
+					"29": "Scenes.Scenefb10",
+					"30": "Scenes.Scenefb11",
+					"31": "Scenes.Scenefb12",
+					"32": "Scenes.Scenefb13",
+					"33": "Scenes.Scenefb14",
+					"34": "Scenes.Scenefb15"
 				}
 			},
 			"numeric": {
@@ -251,6 +269,46 @@
 				},
 				"Scenes.Scenes7": {
 					"joinId": 8,
+					"smartObjectId": 2
+				},
+				"Scenes.Scenes8": {
+					"joinId": 9,
+					"smartObjectId": 2
+				},
+				"Scenes.Scenes9": {
+					"joinId": 10,
+					"smartObjectId": 2
+				},
+				"Scenes.Scenes10": {
+					"joinId": 11,
+					"smartObjectId": 2
+				},
+				"Scenes.Scenes11": {
+					"joinId": 12,
+					"smartObjectId": 2
+				},
+				"Scenes.Scenes12": {
+					"joinId": 13,
+					"smartObjectId": 2
+				},
+				"Scenes.Scenes13": {
+					"joinId": 14,
+					"smartObjectId": 2
+				},
+				"Scenes.Scenes14": {
+					"joinId": 15,
+					"smartObjectId": 2
+				},
+				"Scenes.Scenes15": {
+					"joinId": 16,
+					"smartObjectId": 2
+				},
+				"Scenes.Raise": {
+					"joinId": 17,
+					"smartObjectId": 2
+				},
+				"Scenes.Lower": {
+					"joinId": 18,
 					"smartObjectId": 2
 				}
 			}
