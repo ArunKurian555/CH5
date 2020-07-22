@@ -11,7 +11,9 @@ import { UtilitiesComponent } from './utilities/utilities.component';
 import { ConfigService } from 'src/service/config.service';
 import { View3Component } from './view3/view3.component';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { ColorSketchModule } from 'ngx-color/sketch';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 import { View4Component } from './view4/view4.component';
 import { View5Component } from './view5/view5.component';
@@ -23,10 +25,12 @@ import { ColorChromeModule } from 'ngx-color/chrome';
 import { MatSliderModule } from '@angular/material/slider';
 import { AreapopComponent } from './areapop/areapop.component'; // <color-chrome></color-chrome>
 import { FormsModule } from '@angular/forms';
-
+import { MatButtonModule } from '@angular/material/button';
+import { EditnameComponent } from './editname/editname.component';
+import { EditorpageComponent } from './editorpage/editorpage.component';
 @NgModule({
-  declarations: [AppComponent, ScenesComponent, UtilitiesComponent, View3Component, View4Component, View5Component, DmxpopComponent, AreapopComponent],
-  imports: [BrowserModule, FontAwesomeModule, ScrollingModule, ColorSketchModule, NoopAnimationsModule, BrowserAnimationsModule, MatDialogModule, ColorChromeModule, MatSliderModule, FormsModule],
+  declarations: [AppComponent, ScenesComponent, UtilitiesComponent, View3Component, View4Component, View5Component, DmxpopComponent, AreapopComponent, EditnameComponent, EditorpageComponent],
+  imports: [BrowserModule, FontAwesomeModule, ScrollingModule, ColorSketchModule, NoopAnimationsModule, BrowserAnimationsModule, MatDialogModule, ColorChromeModule, MatSliderModule, FormsModule, MatGridListModule, MatSlideToggleModule, MatButtonModule],
   providers: [
     { provide: APP_BASE_HREF, useValue: './' },
     ChRouteService,

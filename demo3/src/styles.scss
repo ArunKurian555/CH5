@@ -70,6 +70,7 @@ font-size: larger;
 /////////////////////////
 
 #loadscroll {
+  
   .list-item:nth-child(odd) {
     padding: 0.2em !important;
     background-color: rgb(255, 255, 255) !important;
@@ -309,12 +310,76 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 
+
+//////////////////////// Scheduler
+
+#eventscroll{
 .cdk-virtual-scroll-content-wrapper
 {
-  padding: 1em;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+align-items: center;
+}
 }
 
-.swiper-wrapper
+.events
 {
-  transition-duration: 1000ms !important;
+    border: 0;
+margin: 2px;
+  padding: 0.7em;
+  height: 30vh;
 }
+
+
+.events{
+    background-color: rgb(255, 255, 255) !important;
+  
+    .noUi-marker {
+      height: 8px;
+    }
+
+    .noUi-value-horizontal {
+      transform: translate(-50%, 3%);
+      color: rgb(0, 0, 0);
+    }
+    .noUi-target {
+      height: 0.9em;
+    }
+
+    .noUi-tooltip {
+      padding: 0.1em 0.1em 0.1em 0.1em;
+      border: 0;
+      background-color: transparent;
+    }
+    .cb-icon {
+      color: white !important;
+    }
+    
+   .noUi-connect
+   {
+     background: rgb(69, 134, 255); 
+   }
+  }
+
+
+
+  /////////////////////   Sch button
+
+$ch5-white: #fff !default;
+$ch5-black: rgb(0, 0, 0) !default;
+  // source
+  .source-list .ch5-button {
+    border-color: rgba(0, 0, 0, 0.125) !important;
+    color: $ch5-black !important;
+    background-color: $ch5-white !important;
+  
+    &--selected {
+      background-color: #00b8ffd6 !important;
+      border-color: #00b8ffd6 !important;
+      color: $ch5-white !important;
+    }
+
+  }
+
+  
+

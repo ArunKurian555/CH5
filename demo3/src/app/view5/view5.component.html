@@ -1,1 +1,16 @@
-<h1>COMING SOON</h1>
+<p class="chheader">
+    Scheduler
+</p>
+<cdk-virtual-scroll-viewport id="eventscroll" itemSize="8" class=" scroller ">
+    <div *cdkVirtualFor="let item of evt; let idx = index" class="events animate__animated animate__fadeIn">
+        <div class=" source-list contain">
+            <p class="aligner time" style="font-size: 2.5rem;">{{Events[idx].time}}</p>
+            <p class="aligner" style=" text-align: center; font-size: 1rem;">{{Events[idx].days}}</p>
+            <p class="aligner" style=" text-align: center; padding-top: 0%; font-size: 1.5rem;">{{Events[idx].name}}</p>
+            <ch5-button style="text-align: center;display: block;" type="primary" shape="circle"
+                iconClass="fa fa-check fa-3x" iconPosition="top" size="x-small" receiveStateSelected="{{evtf[idx]}}"
+                sendEventOnTouch="{{evt[idx]}}" sendEventOnClick="{{evt[idx]}}">
+            </ch5-button>
+        </div>
+    </div>
+</cdk-virtual-scroll-viewport>

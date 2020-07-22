@@ -1,5 +1,8 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import { MatSliderChange } from '@angular/material/slider';
+
+import { MatDialog } from '@angular/material/dialog';
+import { AreapopComponent } from '../areapop/areapop.component';
+import { EditnameComponent } from '../editname/editname.component';
 
 declare var CrComLib: any;
 @Component({
@@ -10,19 +13,18 @@ declare var CrComLib: any;
 
 
 export class View4Component implements OnInit {
-  constructor() { }
-  myModel = [];
+  constructor(public dialog: MatDialog) { }
 
-  activeZones = [1, 3, 5, 7, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
-
-  formatLabel(value: number) {
-    if (value >= 655) {
-      return Math.round(value / 655.35) + '%';
-    }
-    return value;
-  }
   ngOnInit(): void {
 
+  }
 
+
+
+  editname() {
+    const dialogRef = this.dialog.open(EditnameComponent, {
+      height: '80vh',
+      width: '80vw',
+    });
   }
 }

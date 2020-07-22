@@ -1,0 +1,30 @@
+<div class="contain">
+    <div class="item1">
+        <p class="text">Select Zone / Area to rename</p>
+        <ch5-list style="width: 100%;" itemWidth="25%" scrollbar="true" receivestatesize="Area.Size"
+            orientation="horizontal" indexId="idx" maxheight="70vh">
+            <template ngNonBindable>
+                <div class="span">
+                    <ch5-button type="primary" style="height: 6em; padding: 0; margin: 0;" stretch="both"
+                        receivestatelabel="Area.AreaName{{idx}}" size="regular" shape="rounded-rectangle"
+                        receivestateselected="Area.AreaSelected{{idx}}" sendEventOnClick="Area.AreaSelect{{idx}}">
+                    </ch5-button>
+                    <ch5-button iconclass="fas fa-edit fa-2x">
+                    </ch5-button>
+                </div>
+            </template>
+        </ch5-list>
+    </div>
+    <div class="item2">
+        <cdk-virtual-scroll-viewport itemSize="20" class=" scroller ">
+            <div *cdkVirtualFor="let item of activeZones; let idx = index"
+                class="loads animate__animated animate__fadeIn">
+                <div></div>
+                <p id="Zonename">{{activezonelabel[activeZones[idx]]}}</p>
+                <button class="buttons" mat-fab (click)="editname2(activeZones[idx])">
+                    <mat-icon class="fas fa-edit fa-2x"></mat-icon>
+                </button>
+            </div>
+        </cdk-virtual-scroll-viewport>
+    </div>
+</div>

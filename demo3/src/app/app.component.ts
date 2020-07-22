@@ -21,7 +21,7 @@ export class AppComponent {
 
 
   ngOnInit() {
-    this.rout.active = 0;
+    this.rout.active = 3;
     this.loadEmulator();
 
   }

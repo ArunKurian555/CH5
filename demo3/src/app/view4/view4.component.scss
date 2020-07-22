@@ -1,3 +1,32 @@
-mat-slider {
-  width: 300px;
+.contain
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  justify-items: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.buttons{
+  height: 15rem;
+    width: 15rem;
+    color: white;
+    font-size: 2rem;
+    font-family: sans-serif;
+    background: border-box;
+    color: black;
+    background-color: #ffffff85;
+}
+
+.chheader
+{
+font-weight: 400;
+font-size: 2em;
+margin: 0 0 0 0;
+padding: .2em 1em .2em 0 ;
+color: rgb(0, 0, 0);
+width: 100vw;
+
+    margin-left: .5em;
+
 }
