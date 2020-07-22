@@ -6,10 +6,16 @@
     <button class="buttons" mat-fab (click)="editname()">
         <mat-icon>Edit Names </mat-icon>
     </button>
-    <button class="buttons" mat-fab>
-        <mat-icon class="fa fa-refresh fa-4x"></mat-icon>
+    <button class="buttons " mat-fab (click)="clicked($event)">
+        <mat-icon> <span class="material-icons" style="font-size: 8rem;">
+                cached
+            </span></mat-icon>
+        <p style="
+    FONT-SIZE: .8em;
+    margin-bottom: 0px;
+">Save</p>
     </button>
-    <button class="buttons" mat-fab>
+    <button class="buttons" mat-fab (click)="ramptime()">
         <mat-icon>Ramp Time </mat-icon>
     </button>
 </div>

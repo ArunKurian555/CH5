@@ -28,8 +28,9 @@ import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { EditnameComponent } from './editname/editname.component';
 import { EditorpageComponent } from './editorpage/editorpage.component';
+import { RamptimeComponent } from './ramptime/ramptime.component';
 @NgModule({
-  declarations: [AppComponent, ScenesComponent, UtilitiesComponent, View3Component, View4Component, View5Component, DmxpopComponent, AreapopComponent, EditnameComponent, EditorpageComponent],
+  declarations: [AppComponent, ScenesComponent, UtilitiesComponent, View3Component, View4Component, View5Component, DmxpopComponent, AreapopComponent, EditnameComponent, EditorpageComponent, RamptimeComponent],
   imports: [BrowserModule, FontAwesomeModule, ScrollingModule, ColorSketchModule, NoopAnimationsModule, BrowserAnimationsModule, MatDialogModule, ColorChromeModule, MatSliderModule, FormsModule, MatGridListModule, MatSlideToggleModule, MatButtonModule],
   providers: [
     { provide: APP_BASE_HREF, useValue: './' },

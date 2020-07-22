@@ -9,14 +9,21 @@
                         receivestatelabel="Area.AreaName{{idx}}" size="regular" shape="rounded-rectangle"
                         receivestateselected="Area.AreaSelected{{idx}}" sendEventOnClick="Area.AreaSelect{{idx}}">
                     </ch5-button>
-                    <ch5-button iconclass="fas fa-edit fa-2x">
+                    <ch5-button style="width:4em" type="primary" shape="circle" size="x-small"
+                        iconclass="fas fa-edit fa-2x">
                     </ch5-button>
                 </div>
             </template>
         </ch5-list>
+
+
+
+
+
+
     </div>
     <div class="item2">
-        <cdk-virtual-scroll-viewport itemSize="20" class=" scroller ">
+        <cdk-virtual-scroll-viewport itemSize="10" class=" scroller " minBufferPx="500" maxBufferPx="4000">
             <div *cdkVirtualFor="let item of activeZones; let idx = index"
                 class="loads animate__animated animate__fadeIn">
                 <div></div>

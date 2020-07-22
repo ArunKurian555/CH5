@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "~animate.css/animate.min";
+@import '~material-design-icons/iconfont/material-icons.css';
 
 body
 {
@@ -383,3 +384,10 @@ $ch5-black: rgb(0, 0, 0) !default;
 
   
 
+//////////////////input elements
+
+.ch5-textinput__assets
+{
+  
+    border: 1px solid #366d60 !important;
+}
