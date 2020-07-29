@@ -16,8 +16,8 @@ border-width: 2px;
 }
 .wrapper {
   display: grid;
-  grid-template-columns: 3.5fr 1fr;
-  height: 75vh;
+  grid-template-columns: 4.5fr 1fr;
+  height: 80vh;
   align-items: center;
   justify-items: center;
   padding: .4em;
@@ -70,7 +70,35 @@ width: 100%;
 .RL
 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   justify-items: center;
-margin-top: .5rem;
+}
+
+
+
+
+
+
+
+.Scenestab
+{
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+}
+
+.scenebutton{
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  width: inherit;
+  button
+  {
+    margin: .2em;
+    font-size: 1.5em;
+    background: whitesmoke;
+  }
 }

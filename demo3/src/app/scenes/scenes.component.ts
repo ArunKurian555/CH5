@@ -7,6 +7,8 @@ import { MatDialog } from '@angular/material/dialog';
 import { DmxpopComponent } from '../dmxpop/dmxpop.component';
 import { SelectorFlags } from '@angular/compiler/src/core';
 import { AreapopComponent } from '../areapop/areapop.component';
+import { ScenepopComponent } from '../scenepop/scenepop.component';
+import { ConfirmationComponent } from '../confirmation/confirmation.component';
 
 
 declare var CrComLib: any;
@@ -155,6 +157,18 @@ export class ScenesComponent implements OnInit {
 
   Areapop() {
     const dialogRef = this.dialog.open(AreapopComponent, {
+    });
+  }
+
+  Scenepop() {
+    const dialogRef = this.dialog.open(ScenepopComponent, {
+
+    });
+  }
+
+  Scenesave() {
+    const dialogRef = this.dialog.open(ConfirmationComponent, {
+
     });
   }
 }

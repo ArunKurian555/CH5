@@ -40,6 +40,11 @@ export class View4Component implements OnInit {
     CrComLib.publishEvent('b', 1202, false);
   }
 
+  clicked2(event) {
+    CrComLib.publishEvent('b', 1202, true);
+    CrComLib.publishEvent('b', 1202, false);
+  }
+
 
   ramptime() {
     const dialogRef = this.dialog.open(RamptimeComponent, {

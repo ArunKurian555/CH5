@@ -7,6 +7,8 @@ import { MatDialog } from '@angular/material/dialog';
 import { DmxpopComponent } from '../dmxpop/dmxpop.component';
 import { SelectorFlags } from '@angular/compiler/src/core';
 import { templateJitUrl } from '@angular/compiler';
+import { RamptimeComponent } from '../ramptime/ramptime.component';
+import { SettimeComponent } from '../settime/settime.component';
 
 declare var CrComLib: any;
 
@@ -402,5 +404,13 @@ export class View5Component implements OnInit {
 
 
   }
+
+
+  onClick() {
+
+    const dialogRef = this.dialog.open(SettimeComponent, {
+    });
+  }
+
 }
 

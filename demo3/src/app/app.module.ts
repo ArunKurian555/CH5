@@ -29,8 +29,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { EditnameComponent } from './editname/editname.component';
 import { EditorpageComponent } from './editorpage/editorpage.component';
 import { RamptimeComponent } from './ramptime/ramptime.component';
+import { ScenepopComponent } from './scenepop/scenepop.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
+import { SettimeComponent } from './settime/settime.component';
 @NgModule({
-  declarations: [AppComponent, ScenesComponent, UtilitiesComponent, View3Component, View4Component, View5Component, DmxpopComponent, AreapopComponent, EditnameComponent, EditorpageComponent, RamptimeComponent],
+  declarations: [AppComponent, ScenesComponent, UtilitiesComponent, View3Component, View4Component, View5Component, DmxpopComponent, AreapopComponent, EditnameComponent, EditorpageComponent, RamptimeComponent, ScenepopComponent, ConfirmationComponent, SettimeComponent],
   imports: [BrowserModule, FontAwesomeModule, ScrollingModule, ColorSketchModule, NoopAnimationsModule, BrowserAnimationsModule, MatDialogModule, ColorChromeModule, MatSliderModule, FormsModule, MatGridListModule, MatSlideToggleModule, MatButtonModule],
   providers: [
     { provide: APP_BASE_HREF, useValue: './' },

@@ -3,7 +3,7 @@
 </p>
 <cdk-virtual-scroll-viewport id="eventscroll" itemSize="8" class=" scroller ">
     <div *cdkVirtualFor="let item of evt; let idx = index" class="events animate__animated animate__fadeIn">
-        <div class=" source-list contain">
+        <div class=" source-list contain" (click)="onClick()">
             <p class="aligner time" style="font-size: 2.5rem;">{{Events[idx].time}}</p>
             <p class="aligner" style=" text-align: center; font-size: 1rem;">{{Events[idx].days}}</p>
             <p class="aligner" style=" text-align: center; padding-top: 0%; font-size: 1.5rem;">{{Events[idx].name}}</p>
