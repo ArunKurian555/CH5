@@ -332,7 +332,6 @@ align-items: center;
 {
     border: 0;
 margin: 2px;
-  padding: 0.7em;
   height: 30vh;
 }
 
@@ -401,4 +400,40 @@ $ch5-black: rgb(0, 0, 0) !default;
 .cdk-overlay-pane
 {
   max-width: 100vw !important;
+}
+
+
+
+
+
+//////////////////////////// custom dial
+.timepicker
+{
+  width: 50em !important;
+
+.ng-star-inserted
+{
+  color: white !important;
+}
+}
+
+.timepicker__header
+{
+      background-color: #0fb1c5f5 !important;
+}
+.timepicker-period__btn
+{
+  color: black ;
+
+}
+.timepicker-button
+{
+color: black !important;
+
+}
+
+
+input:focus {
+    outline: 1px solid #fff;
+    outline-offset: 3px;
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ChRouteService } from 'src/service/ch-route.service';
+import { UserIdleService } from 'angular-user-idle';
 
 @Component({
   selector: 'app-view3',
@@ -7,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class View3Component implements OnInit {
 
-  constructor() { }
+  constructor(
+
+    public rout: ChRouteService,
+
+    private userIdle: UserIdleService
+  ) { }
   ngOnInit(): void {// Javascript is used to set the clock to your computer time.
     var hoursContainer = document.querySelector('.hours')
     var minutesContainer = document.querySelector('.minutes')
@@ -84,6 +91,14 @@ export class View3Component implements OnInit {
     }
 
     setInterval(updateTime, 100)
+  }
+
+  onclick() {
+
+
+    this.rout.active = 5;
+
+    this.userIdle.resetTimer();
   }
 
 }

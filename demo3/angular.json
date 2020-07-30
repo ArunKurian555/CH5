@@ -36,10 +36,12 @@
               "node_modules/@fortawesome/fontawesome-free/scss/solid.scss",
               "node_modules/@fortawesome/fontawesome-free/scss/brands.scss",
               "node_modules/@crestron/ch5-theme/output/themes/light-theme.css",
-              "node_modules/animate.css/animate.min.css"
+              "node_modules/animate.css/animate.min.css",
+              "node_modules/patternlock/dist/patternlock.min.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/patternlock/dist/patternlock.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/@crestron/ch5-crcomlib/build_bundles/umd/cr-com-lib.js"
             ]
@@ -112,10 +114,12 @@
               "node_modules/@fortawesome/fontawesome-free/scss/solid.scss",
               "node_modules/@fortawesome/fontawesome-free/scss/brands.scss",
               "node_modules/@crestron/ch5-theme/output/themes/light-theme.css",
-              "node_modules/animate.css/animate.min.css"
+              "node_modules/animate.css/animate.min.css",
+              "node_modules/patternlock/dist/patternlock.min.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/patternlock/dist/patternlock.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/@crestron/ch5-crcomlib/build_bundles/umd/cr-com-lib.js"
             ]

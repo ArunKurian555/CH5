@@ -32,9 +32,17 @@ import { RamptimeComponent } from './ramptime/ramptime.component';
 import { ScenepopComponent } from './scenepop/scenepop.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { SettimeComponent } from './settime/settime.component';
+import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
+import { View6Component } from './view6/view6.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { UserIdleModule } from 'angular-user-idle';
+
+import { View7Component } from './view7/view7.component';
+
 @NgModule({
-  declarations: [AppComponent, ScenesComponent, UtilitiesComponent, View3Component, View4Component, View5Component, DmxpopComponent, AreapopComponent, EditnameComponent, EditorpageComponent, RamptimeComponent, ScenepopComponent, ConfirmationComponent, SettimeComponent],
-  imports: [BrowserModule, FontAwesomeModule, ScrollingModule, ColorSketchModule, NoopAnimationsModule, BrowserAnimationsModule, MatDialogModule, ColorChromeModule, MatSliderModule, FormsModule, MatGridListModule, MatSlideToggleModule, MatButtonModule],
+  declarations: [AppComponent, ScenesComponent, UtilitiesComponent, View3Component, View4Component, View5Component, DmxpopComponent, AreapopComponent, EditnameComponent, EditorpageComponent, RamptimeComponent, ScenepopComponent, ConfirmationComponent, SettimeComponent, View6Component, View7Component],
+  imports: [BrowserModule, FontAwesomeModule, ScrollingModule, ColorSketchModule, NoopAnimationsModule, BrowserAnimationsModule, MatDialogModule, ColorChromeModule, MatSliderModule, FormsModule, MatGridListModule, MatSlideToggleModule, MatButtonModule, NgxMaterialTimepickerModule, DragDropModule,
+    UserIdleModule.forRoot({ idle: 100, timeout: 10, ping: 120 })],
   providers: [
     { provide: APP_BASE_HREF, useValue: './' },
     ChRouteService,

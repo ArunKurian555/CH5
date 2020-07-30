@@ -1,5 +1,5 @@
-<ch5-triggerview class="main-swiper" activeView="{{ rout.active }}" gestureable="false" endless="false"
-  style="margin: 0 0;" disableanimation="true">
+<ch5-triggerview [ngStyle]="activeflag" class="main-swiper" activeView="{{ rout.active }}" gestureable="false"
+  endless="false" style="margin: 0 0;" disableanimation="true">
   <ch5-triggerview-child style="width: 100vw;">
     <app-scenes></app-scenes>
   </ch5-triggerview-child>
@@ -7,7 +7,7 @@
     <app-utilities></app-utilities>
   </ch5-triggerview-child>
   <ch5-triggerview-child style="width: 100vw;">
-    <app-view3></app-view3>
+    <app-view7></app-view7>
   </ch5-triggerview-child>
   <ch5-triggerview-child style="width: 100vw;">
     <app-view4></app-view4>
@@ -15,8 +15,14 @@
   <ch5-triggerview-child style="width: 100vw;">
     <app-view5></app-view5>
   </ch5-triggerview-child>
+  <ch5-triggerview-child style="width: 100vw;">
+    <app-view6></app-view6>
+  </ch5-triggerview-child>
+  <ch5-triggerview-child style="width: 100vw;">
+    <app-view3></app-view3>
+  </ch5-triggerview-child>
 </ch5-triggerview>
-<div class="aligner">
+<div class="aligner" [ngStyle]="activeflag1">
 
   <button class="buttons" mat-fab (click)="onClick(1)">
     <mat-icon class="fas fa-lightbulb fa-2x"></mat-icon>

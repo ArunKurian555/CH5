@@ -1,10 +1,2 @@
-<div class="contain">
-    <cdk-virtual-scroll-viewport itemSize="12" minBufferPx="200" maxBufferPx="400" class="example-viewport">
-        <div *cdkVirtualFor="let item of hours" class="example-item">{{item}}</div>
-    </cdk-virtual-scroll-viewport>
-
-    <cdk-virtual-scroll-viewport itemSize="59" minBufferPx="200" maxBufferPx="400" class="example-viewport">
-        <div *cdkVirtualFor="let item of minutes" class="example-item">{{item}}</div>
-    </cdk-virtual-scroll-viewport>
-
-</div>
+<ngx-material-timepicker-toggle [for]="toggleTimepicker"></ngx-material-timepicker-toggle>
+<ngx-material-timepicker #toggleTimepicker></ngx-material-timepicker>

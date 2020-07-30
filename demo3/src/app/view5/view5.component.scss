@@ -20,7 +20,13 @@ width: 100%;
 
 .contain
 {
-    height: 100%;
+    height: inherit;
+    
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+
 }
 .time{
 
@@ -48,4 +54,17 @@ width: 100vw;
 
     margin-left: .5em;
 
+}
+
+.customdial
+{
+    color: white;
+    
+    justify-self: right;
+    border-bottom-style: dashed;
+    button
+    {
+    height: 4em !important;
+    width: 4em !important;
+    }
 }

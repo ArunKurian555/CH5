@@ -1,0 +1,10 @@
+<div class="example-boundary">
+    <button style="float: right; background-color: white;" class="buttons" mat-fab (click)="onclick()">
+        <mat-icon class="fas fa-lock fa-2x"></mat-icon>
+    </button>
+    <div class="example-box" cdkDragBoundary=".example-boundary" cdkDrag [cdkDragStartDelay]="2000"
+        (cdkDragEnded)="onDragEnded($event)" [cdkDragFreeDragPosition]="dragPosition">
+        1
+    </div>
+
+</div>

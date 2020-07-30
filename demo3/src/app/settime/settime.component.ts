@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
 
 @Component({
   selector: 'app-settime',
@@ -7,8 +8,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SettimeComponent implements OnInit {
 
-  hours = Array.from({ length: 12 }).map((_, i) => `${i + 1}`);
-  minutes = Array.from({ length: 59 }).map((_, i) => `${i}`);
 
   constructor() { }
 

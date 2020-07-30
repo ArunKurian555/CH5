@@ -3,7 +3,7 @@
 </p>
 <cdk-virtual-scroll-viewport id="eventscroll" itemSize="8" class=" scroller ">
     <div *cdkVirtualFor="let item of evt; let idx = index" class="events animate__animated animate__fadeIn">
-        <div class=" source-list contain" (click)="onClick()">
+        <div class=" source-list contain">
             <p class="aligner time" style="font-size: 2.5rem;">{{Events[idx].time}}</p>
             <p class="aligner" style=" text-align: center; font-size: 1rem;">{{Events[idx].days}}</p>
             <p class="aligner" style=" text-align: center; padding-top: 0%; font-size: 1.5rem;">{{Events[idx].name}}</p>
@@ -11,6 +11,14 @@
                 iconClass="fa fa-check fa-3x" iconPosition="top" size="x-small" receiveStateSelected="{{evtf[idx]}}"
                 sendEventOnTouch="{{evt[idx]}}" sendEventOnClick="{{evt[idx]}}">
             </ch5-button>
+            <div class="customdial">
+                <div class="custom-theme-example">
+                    <ngx-material-timepicker-toggle [for]="toggleTimepicker"></ngx-material-timepicker-toggle>
+                    <ngx-material-timepicker #toggleTimepicker>
+                    </ngx-material-timepicker>
+                </div>
+
+            </div>
         </div>
     </div>
 </cdk-virtual-scroll-viewport>

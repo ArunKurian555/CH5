@@ -27,6 +27,7 @@ export interface Event {
 export class View5Component implements OnInit {
   constructor(public dialog: MatDialog) { }
 
+
   Events: Event[] = [
     { time: '6:30pm', days: '', name: 'white' },
     { time: '6:30pm', days: 'Mo Su', name: 'black' },
