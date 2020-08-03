@@ -1,6 +1,11 @@
 .buttons{
     color: black;
     background-color: #ffffff85;
+    
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    margin-left: 0em;
 }
 
 button:hover,
@@ -15,4 +20,9 @@ button:focus {
 
 button:active {
     transform: scale(0.99);
+}
+
+.item3
+{
+    margin: 1em;
 }

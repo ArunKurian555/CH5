@@ -53,6 +53,7 @@ namespace CBlink
         void ScenesName5(ScenesStringInputSigDelegate callback);
         void ScenesName6(ScenesStringInputSigDelegate callback);
         void ScenesName7(ScenesStringInputSigDelegate callback);
+        void ActiveScene(ScenesStringInputSigDelegate callback);
 
     }
 
@@ -127,6 +128,7 @@ namespace CBlink
                 public const uint ScenesName5 = 6;
                 public const uint ScenesName6 = 7;
                 public const uint ScenesName7 = 8;
+                public const uint ActiveScene = 9;
             }
         }
 
@@ -518,6 +520,14 @@ namespace CBlink
             for (int index = 0; index < Devices.Count; index++)
             {
                 callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.ScenesName7], this);
+            }
+        }
+
+        public void ActiveScene(ScenesStringInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.ActiveScene], this);
             }
         }
 

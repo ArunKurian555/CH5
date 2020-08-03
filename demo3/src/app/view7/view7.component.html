@@ -1,10 +1,11 @@
 <div class="example-boundary">
-    <button style="float: right; background-color: white;" class="buttons" mat-fab (click)="onclick()">
+    <button style="float: right; background-color: #00e7ff;" class="buttons" mat-fab (click)="onclick()">
         <mat-icon class="fas fa-lock fa-2x"></mat-icon>
     </button>
-    <div class="example-box" cdkDragBoundary=".example-boundary" cdkDrag [cdkDragStartDelay]="2000"
-        (cdkDragEnded)="onDragEnded($event)" [cdkDragFreeDragPosition]="dragPosition">
-        1
+    <div class="example-box" *ngFor="let item of items; index as i;" cdkDragBoundary=".example-boundary" cdkDrag
+        [cdkDragStartDelay]="1000" (cdkDragEnded)="onDragEnded($event,i)" [cdkDragFreeDragPosition]="positionarray[i+1]"
+        (click)="controlpop(i)">
+        Area {{i+1}}
     </div>
 
 </div>

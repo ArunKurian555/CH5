@@ -69,4 +69,9 @@ export class EditnameComponent implements OnInit {
 
 
 
+  editname1() {
+    const dialogRef = this.dialog.open(EditorpageComponent, {
+    });
+  }
+
 }

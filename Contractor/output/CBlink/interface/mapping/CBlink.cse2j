@@ -1,6 +1,6 @@
 {
 	"name": "CBlink",
-	"timestamp": "2020-07-21 18:42:57.939",
+	"timestamp": "2020-08-03 12:31:31.721",
 	"version": "1.0.0.0",
 	"schema_version": 1,
 	"extra_value": "",
@@ -18,7 +18,46 @@
 					"8": "Area.AreaSelected7",
 					"9": "Area.AreaSelected8",
 					"10": "Area.AreaSelected9",
-					"11": "Area.AreaSelected10"
+					"11": "Area.AreaSelected10",
+					"12": "Area.AreaSelected11",
+					"13": "Area.AreaSelected12",
+					"14": "Area.AreaSelected13",
+					"15": "Area.AreaSelected14",
+					"16": "Area.AreaSelected15",
+					"17": "Area.AreaSelected16",
+					"18": "Area.AreaSelected17",
+					"19": "Area.AreaSelected18",
+					"20": "Area.AreaSelected19",
+					"21": "Area.AreaSelected20",
+					"22": "Area.AreaSelected21",
+					"23": "Area.AreaSelected22",
+					"24": "Area.AreaSelected23",
+					"25": "Area.AreaSelected24",
+					"26": "Area.AreaSelected25",
+					"27": "Area.AreaSelected26",
+					"28": "Area.AreaSelected27",
+					"29": "Area.AreaSelected28",
+					"30": "Area.AreaSelected29",
+					"31": "Area.AreaSelected30",
+					"32": "Area.AreaSelected31",
+					"33": "Area.AreaSelected32",
+					"34": "Area.AreaSelected33",
+					"35": "Area.AreaSelected34",
+					"36": "Area.AreaSelected35",
+					"37": "Area.AreaSelected36",
+					"38": "Area.AreaSelected37",
+					"39": "Area.AreaSelected38",
+					"40": "Area.AreaSelected39",
+					"41": "Area.AreaSelected40",
+					"42": "Area.AreaSelected41",
+					"43": "Area.AreaSelected42",
+					"44": "Area.AreaSelected43",
+					"45": "Area.AreaSelected44",
+					"46": "Area.AreaSelected45",
+					"47": "Area.AreaSelected46",
+					"48": "Area.AreaSelected47",
+					"49": "Area.AreaSelected48",
+					"50": "Area.AreaSelected49"
 				},
 				"2": {
 					"19": "Scenes.Scenefb0",
@@ -70,7 +109,46 @@
 					"9": "Area.AreaName7",
 					"10": "Area.AreaName8",
 					"11": "Area.AreaName9",
-					"12": "Area.AreaName10"
+					"12": "Area.AreaName10",
+					"13": "Area.AreaName11",
+					"14": "Area.AreaName12",
+					"15": "Area.AreaName13",
+					"16": "Area.AreaName14",
+					"17": "Area.AreaName15",
+					"18": "Area.AreaName16",
+					"19": "Area.AreaName17",
+					"20": "Area.AreaName18",
+					"21": "Area.AreaName19",
+					"22": "Area.AreaName20",
+					"23": "Area.AreaName21",
+					"24": "Area.AreaName22",
+					"25": "Area.AreaName23",
+					"26": "Area.AreaName24",
+					"27": "Area.AreaName25",
+					"28": "Area.AreaName26",
+					"29": "Area.AreaName27",
+					"30": "Area.AreaName28",
+					"31": "Area.AreaName29",
+					"32": "Area.AreaName30",
+					"33": "Area.AreaName31",
+					"34": "Area.AreaName32",
+					"35": "Area.AreaName33",
+					"36": "Area.AreaName34",
+					"37": "Area.AreaName35",
+					"38": "Area.AreaName36",
+					"39": "Area.AreaName37",
+					"40": "Area.AreaName38",
+					"41": "Area.AreaName39",
+					"42": "Area.AreaName40",
+					"43": "Area.AreaName41",
+					"44": "Area.AreaName42",
+					"45": "Area.AreaName43",
+					"46": "Area.AreaName44",
+					"47": "Area.AreaName45",
+					"48": "Area.AreaName46",
+					"49": "Area.AreaName47",
+					"50": "Area.AreaName48",
+					"51": "Area.AreaName49"
 				},
 				"2": {
 					"1": "Scenes.ScenesName0",
@@ -80,7 +158,8 @@
 					"5": "Scenes.ScenesName4",
 					"6": "Scenes.ScenesName5",
 					"7": "Scenes.ScenesName6",
-					"8": "Scenes.ScenesName7"
+					"8": "Scenes.ScenesName7",
+					"9": "Scenes.ActiveScene"
 				},
 				"3": {
 					"1": "Zones.Zone1",
@@ -263,6 +342,162 @@
 				},
 				"Area.AreaSelect10": {
 					"joinId": 11,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect11": {
+					"joinId": 12,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect12": {
+					"joinId": 13,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect13": {
+					"joinId": 14,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect14": {
+					"joinId": 15,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect15": {
+					"joinId": 16,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect16": {
+					"joinId": 17,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect17": {
+					"joinId": 18,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect18": {
+					"joinId": 19,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect19": {
+					"joinId": 20,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect20": {
+					"joinId": 21,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect21": {
+					"joinId": 22,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect22": {
+					"joinId": 23,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect23": {
+					"joinId": 24,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect24": {
+					"joinId": 25,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect25": {
+					"joinId": 26,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect26": {
+					"joinId": 27,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect27": {
+					"joinId": 28,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect28": {
+					"joinId": 29,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect29": {
+					"joinId": 30,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect30": {
+					"joinId": 31,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect31": {
+					"joinId": 32,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect32": {
+					"joinId": 33,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect33": {
+					"joinId": 34,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect34": {
+					"joinId": 35,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect35": {
+					"joinId": 36,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect36": {
+					"joinId": 37,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect37": {
+					"joinId": 38,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect38": {
+					"joinId": 39,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect39": {
+					"joinId": 40,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect40": {
+					"joinId": 41,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect41": {
+					"joinId": 42,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect42": {
+					"joinId": 43,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect43": {
+					"joinId": 44,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect44": {
+					"joinId": 45,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect45": {
+					"joinId": 46,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect46": {
+					"joinId": 47,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect47": {
+					"joinId": 48,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect48": {
+					"joinId": 49,
+					"smartObjectId": 1
+				},
+				"Area.AreaSelect49": {
+					"joinId": 50,
 					"smartObjectId": 1
 				},
 				"Scenes.Scenes0": {

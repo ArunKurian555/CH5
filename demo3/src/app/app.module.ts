@@ -38,9 +38,10 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { UserIdleModule } from 'angular-user-idle';
 
 import { View7Component } from './view7/view7.component';
+import { FpzonecontrolComponent } from './fpzonecontrol/fpzonecontrol.component';
 
 @NgModule({
-  declarations: [AppComponent, ScenesComponent, UtilitiesComponent, View3Component, View4Component, View5Component, DmxpopComponent, AreapopComponent, EditnameComponent, EditorpageComponent, RamptimeComponent, ScenepopComponent, ConfirmationComponent, SettimeComponent, View6Component, View7Component],
+  declarations: [AppComponent, ScenesComponent, UtilitiesComponent, View3Component, View4Component, View5Component, DmxpopComponent, AreapopComponent, EditnameComponent, EditorpageComponent, RamptimeComponent, ScenepopComponent, ConfirmationComponent, SettimeComponent, View6Component, View7Component, FpzonecontrolComponent],
   imports: [BrowserModule, FontAwesomeModule, ScrollingModule, ColorSketchModule, NoopAnimationsModule, BrowserAnimationsModule, MatDialogModule, ColorChromeModule, MatSliderModule, FormsModule, MatGridListModule, MatSlideToggleModule, MatButtonModule, NgxMaterialTimepickerModule, DragDropModule,
     UserIdleModule.forRoot({ idle: 100, timeout: 10, ping: 120 })],
   providers: [

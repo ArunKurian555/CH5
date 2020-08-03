@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ChRouteService } from 'src/service/ch-route.service';
 import { CdkDragEnd } from '@angular/cdk/drag-drop';
+import { MatDialog } from '@angular/material/dialog';
+import { FpzonecontrolComponent } from '../fpzonecontrol/fpzonecontrol.component';
+
+declare var CrComLib: any;
 
 @Component({
   selector: 'app-view7',
@@ -9,20 +13,34 @@ import { CdkDragEnd } from '@angular/cdk/drag-drop';
 })
 export class View7Component implements OnInit {
   dragPosition = { x: 0, y: 0 };
-  constructor(public rout: ChRouteService,) { }
+  positionarray = [];
+  constructor(public rout: ChRouteService, public dialog: MatDialog) { }
+  items = [1, 2, 3, 4, 5, 6];
 
   ngOnInit(): void {
-    this.dragPosition = { x: 765.3333740234375, y: 352 };
-
-
+    for (let index = 0; index < this.items.length + 1; index++) {
+      this.positionarray.push(this.dragPosition);
+    }
+    this.positionarray = JSON.parse(localStorage.getItem("savedData"))[0];
   }
   onclick() {
-
-
     this.rout.active = 5;
-
   }
-  public onDragEnded(event: CdkDragEnd): void {
-    console.log(event.source.getFreeDragPosition()); // returns { x: 0, y: 0 }
+  controlpop(i) {
+    CrComLib.publishEvent('b', "Area.AreaSelect" + i, true);
+    CrComLib.publishEvent('b', "Area.AreaSelect" + i, false);
+
+    const dialogRef = this.dialog.open(FpzonecontrolComponent, {
+    });
+  }
+  public onDragEnded(event: CdkDragEnd, a): void {
+    this.positionarray[a + 1] = event.source.getFreeDragPosition();
+    localStorage.setItem("savedData", JSON.stringify([this.positionarray]));
+
+
+    /* localStorage.setItem("savedData", JSON.stringify([object1, object2]));
+    object1 = JSON.parse(localStorage.getItem("savedData"))[0];
+    object2 = JSON.parse(localStorage.getItem("savedData"))[1];
+     */
   }
 }

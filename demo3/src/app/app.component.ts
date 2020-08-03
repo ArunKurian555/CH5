@@ -29,7 +29,7 @@ export class AppComponent {
 
   ngOnInit() {
 
-    this.rout.active = 5;
+    this.rout.active = 0;
     this.loadEmulator();
     let self = this;
 

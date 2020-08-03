@@ -8,7 +8,9 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #fff;
+  
+    background: #ff0000bf;
+
   border-radius: 150px;
   margin-right: 25px;
   position: relative;
@@ -32,4 +34,8 @@
   height: 90vh;
   max-width: 100%;
   border: dotted #ccc 2px;
+  
+  background: url("fp.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

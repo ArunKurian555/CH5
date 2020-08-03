@@ -39,9 +39,15 @@
       </ch5-button>
     </div>
     <div class="scenebutton">
-      <button mat-button style="height: 4.5em; align-self: center;" (click)="Scenepop()">Scenes</button>
+      <ch5-button label="Scenes" receivestatelabel="Scenes.ActiveScene" class="AreaSelect" type="primary" stretch="both"
+        (click)="Scenepop()" style="padding: 0; margin: 0; font-size: 1.5em; height: 6em; width: inherit;"
+        shape="rounded-rectangle">
+      </ch5-button>
       <button mat-button style="
-    height: 2em;" (click)="Scenesave()">Save Scene</button>
+    height: 2em;
+    margin: .2em;
+    font-size: 1.5em;
+    background: whitesmoke;" (click)="Scenesave()">Save Scene</button>
     </div>
     <!--       <ch5-button class="scenebutton" type="primary" style="height: 5em; width: 5em; padding: 0; margin: 0;"
         stretch="both" id="btn_id" size="large" shape="circle" receivestateselected="Scenes.Scenefb0"

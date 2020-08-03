@@ -156,6 +156,7 @@ namespace CBlink
         {
             internal static class Strings
             {
+
                 public const uint Zone1 = 1;
                 public const uint Zone2 = 2;
                 public const uint Zone3 = 3;
@@ -312,6 +313,7 @@ namespace CBlink
         #endregion
 
         #region CH5 Contract
+
 
         public void Zone1(ZonesStringInputSigDelegate callback)
         {

@@ -17,7 +17,7 @@ border-width: 2px;
 .wrapper {
   display: grid;
   grid-template-columns: 4.5fr 1fr;
-  height: 80vh;
+  height: 70vh;
   align-items: center;
   justify-items: center;
   padding: .4em;
@@ -57,7 +57,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 box-sizing: border-box;
-height: 80vh;
+height: inherit;
 width: 100%;
 }
 
@@ -95,4 +95,13 @@ width: 100%;
   display: grid;
   grid-template-rows: 2fr 1fr;
   width: inherit;
+
+  button
+  {
+      border: 1px solid #bdbdbd;
+    margin: .5em;
+    font-size: 1.5em;
+    background: white;
+
   }
+}
