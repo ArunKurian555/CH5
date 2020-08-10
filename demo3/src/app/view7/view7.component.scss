@@ -1,15 +1,13 @@
-.example-box {
-  width: 3em;
-  height: 3em;
-  border: solid 1px #ccc;
-  color: rgba(0, 0, 0, 0.87);
-  cursor: move;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  
-    background: #ff0000bf;
+.example-box {width: 6em;
+    height: 3em;
+    border: solid 1px #ccc;
+    color: rgba(0, 0, 0, 0.87);
+    cursor: move;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #fff700;
 
   border-radius: 150px;
   margin-right: 25px;
@@ -35,7 +33,7 @@
   max-width: 100%;
   border: dotted #ccc 2px;
   
-  background: url("fp.jpg");
+  background: url("fp1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

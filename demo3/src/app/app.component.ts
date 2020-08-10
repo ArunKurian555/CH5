@@ -8,6 +8,7 @@ import { UserIdleService } from 'angular-user-idle';
 declare var CrComLib: any;
 
 import * as lightingEmulator from 'src/assets/data/lighting-emulator.json';
+import { View7Component } from './view7/view7.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -18,8 +19,12 @@ export class AppComponent {
   constructor(
     public rout: ChRouteService,
     private configService: ConfigService,
-    private userIdle: UserIdleService
-  ) { }
+    private userIdle: UserIdleService,
+
+
+  ) {
+
+  }
   activeflag: any;
 
   activeflag1: any;
@@ -65,7 +70,9 @@ export class AppComponent {
   }
 
   onClick(id: number) {
+    let self = this;
     this.rout.active = id - 1;
+
   }
 
   /**
