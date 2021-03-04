@@ -15,7 +15,7 @@ import { View7Component } from './view7/view7.component';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'demo3';
+  title = 'CBCH5';
   constructor(
     public rout: ChRouteService,
     private configService: ConfigService,

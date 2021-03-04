@@ -10,7 +10,7 @@
     <div class="example-box" *ngFor="let item of items; index as i;" cdkDragBoundary=".example-boundary" cdkDrag
         [cdkDragStartDelay]="1000" (cdkDragEnded)="onDragEnded($event,i)" [cdkDragFreeDragPosition]="positionarray[i+1]"
         (click)="controlpop(i)">
-        Area {{i+1}}
+        {{i+1}} 
     </div>
 
 </div>
