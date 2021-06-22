@@ -7,7 +7,7 @@
     "build": "ng build",
     "build:prod": "ng build --prod",
     "build:archive": "ch5-cli archive -p demo3 -c ../Contractor/output/CBlink/interface/mapping/CBlink.cse2j -d dist/demo3 -o dist",
-    "build:deploy": "ch5-cli deploy -H 192.168.1.70 -t touchscreen dist/demo3.ch5z",
+    "build:deploy": "ch5-cli deploy -H 192.168.1.150 -t touchscreen dist/demo3.ch5z",
     "build:deploy1060": "ch5-cli deploy -H 192.168.1.101 -t touchscreen dist/demo3.ch5z",
     "build:onestep": "yarn build:prod && yarn build:archive && yarn build:deploy",
     "build:onestep1060": "yarn build:prod && yarn build:archive && yarn build:deploy1060",
