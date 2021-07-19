@@ -16,13 +16,11 @@ border-width: 2px;
 }
 .wrapper {
   display: grid;
-  grid-template-columns: 4.5fr 1fr;
+  grid-template-columns: 1fr;
   height: 80vh;
   align-items: center;
   justify-items: center;
   padding: .4em;
-  
- 
 }
 
 .load {
@@ -34,7 +32,8 @@ border-width: 2px;
 
 .load-button {
   display: grid;
-  align-items: center;
+  justify-items: center;
+  margin-bottom: 1em;
 }
 
 
@@ -53,12 +52,9 @@ width: 100vw;
 
 .scroller
 {
-display: flex;
-justify-content: center;
-align-items: center;
-box-sizing: border-box;
+
 height: 80vh;
-width: 100%;
+width:100%;
 }
 
 
@@ -95,4 +91,12 @@ width: 100%;
   display: grid;
   grid-template-rows: 2fr 1fr;
   width: inherit;
+  }
+
+  
+
+.cdk-virtual-scroll-content-wrapper {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
   }

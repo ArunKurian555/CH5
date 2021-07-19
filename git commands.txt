@@ -2,3 +2,9 @@ cd C:\Users\arune\Desktop\HTML5\Angular\Crestron\Demo3
  git add .
  git commit -m "Changes"
  git push 
+ 
+
+
+
+
+  git checkout "Branchname"

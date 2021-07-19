@@ -3,7 +3,12 @@
   margin: 0 0;
   padding: 0 0;
 }
+.container
+{
+   display: grid;
 
+   align-items: center;
+}
 .wrapper {
   width: 100vw;
   display: grid;
@@ -40,10 +45,18 @@ width: 100vw;
 
 
 
+.master
+{
+   display: grid;
+/* align-items: center; */
+/* justify-items: center; */
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
 
-
-
+.loads{
+   background-color: unset !important;
+}
 
 
 

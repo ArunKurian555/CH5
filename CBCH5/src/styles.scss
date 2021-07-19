@@ -178,12 +178,14 @@ font-size: larger;
 .loads
 {
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr .3fr;
+  grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
     border: 0;
 margin: 2px;
   padding: 0.7em;
+  height: 15em;
+
 }
   .loads:nth-child(odd) {
     background-color: rgb(255, 255, 255) !important;
