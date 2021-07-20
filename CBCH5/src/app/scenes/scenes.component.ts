@@ -20,7 +20,9 @@ declare var CrComLib: any;
   encapsulation: ViewEncapsulation.None
 })
 export class ScenesComponent implements OnInit {
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog) { 
+    
+  }
   /////////////// Angular Slider
   formatLabel(value: number) {
     if (value >= 1000) {

@@ -185,10 +185,11 @@ font-size: larger;
 margin: 2px;
   padding: 0.7em;
   height: 15em;
+  background-color:whitesmoke;
 
 }
   .loads:nth-child(odd) {
-    background-color: rgb(255, 255, 255) !important;
+  //  background-color: rgb(255, 255, 255) !important;
   
     .noUi-marker {
       height: 8px;
@@ -229,7 +230,7 @@ margin: 2px;
    }
   }
  .loads:nth-child(even) {
-    background-color: rgba(255, 255, 255, 0.76) !important;
+   // background-color: rgba(255, 255, 255, 0.76) !important;
 
     
     .noUi-marker {
@@ -438,4 +439,13 @@ color: black !important;
 input:focus {
     outline: 1px solid #fff;
     outline-offset: 3px;
+}
+
+.load-button
+{
+.ch5-button--selected
+{
+  background-color: #5996e2 !important;
+}
+
 }

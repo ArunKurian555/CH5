@@ -1,26 +1,38 @@
-<p class="chheader">
-        Master Controls
+
+
+
+<div style="display: grid;
+grid-template-columns: 1fr;
+align-items: center;
+justify-items: center;
+font-size: x-large;" >
+<p>
+  Master Controls
 </p>
+
+  </div>
+
+
+
 <div class="container" style="width: 100vw;height: 50vh;padding: 2em;">
 <!--         <iframe width="100%" height="90%" src="https://www.youtube.com/embed/Wf4cea5oObY" frameborder=" 0"
                 sandbox="allow-forms allow-popups allow-pointer-lock allow-same-origin allow-scripts"></iframe> -->
 
     <div class="master loads" style="max-height: fit-content;">
 
-        <ch5-button class="load-button" id="rightbutton" type="primary" shape="circle" iconClass="fas fa-lightbulb fa-3x"
-          iconPosition="top" size="large"  >Light
-        </ch5-button>
-  
-        <ch5-button id="leftbutton" class="load-button" type="primary" shape="circle" size="large"
-          iconClass="far fa-plug fa-3x" iconPosition="top">EM
-        </ch5-button>
-  
-        <ch5-button class="load-button" id="rightbutton" type="primary" shape="circle" iconClass="far fa-plug fa-3x"
-          iconPosition="top" size="large"  > Normal
-        </ch5-button>
-        <ch5-button class="load-button" id="rightbutton" type="primary" shape="circle" iconClass="fas fa-lock fa-3x"
-        iconPosition="top" size="large"  >Lock
+      <ch5-button class="load-button"  type="secondary" shape="circle" iconClass="fas fa-lightbulb fa-3x "
+        iconPosition="top" size="x-small" sendEventOnClick="1211"  receiveStateSelected="1211">Light
       </ch5-button>
+      <ch5-button class="load-button" type="secondary" shape="circle" size="x-small" 
+        iconClass="fas fa-plug fa-3x" iconPosition="top" sendEventOnClick="1212" receiveStateSelected="1212">EM
+      </ch5-button>
+
+      <ch5-button class="load-button" type="secondary" shape="circle" iconClass="fas fa-plug fa-3x"
+        iconPosition="top" size="x-small" sendEventOnClick="1213"receiveStateSelected="1213" > Normal
+      </ch5-button>
+      <ch5-button class="load-button"  type="secondary" shape="circle" iconClass="fas fa-lock fa-2x"
+      iconPosition="top" size="x-small" sendEventOnClick="1214" receiveStateSelected="1214"  >Lock
+    </ch5-button>
       </div>
   
 </div>
