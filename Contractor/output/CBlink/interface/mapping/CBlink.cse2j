@@ -1,6 +1,6 @@
 {
 	"name": "CBlink",
-	"timestamp": "2020-08-03 12:31:31.721",
+	"timestamp": "2021-07-26 15:44:31.150",
 	"version": "1.0.0.0",
 	"schema_version": 1,
 	"extra_value": "",
@@ -89,6 +89,10 @@
 					"9": "Sch.ETF8",
 					"10": "Sch.ETF9",
 					"11": "Sch.ETF10"
+				},
+				"6": {
+					"1": "Pinpad.User",
+					"2": "Pinpad.Admin"
 				}
 			},
 			"numeric": {
@@ -295,6 +299,9 @@
 					"9": "Sch.EN8",
 					"10": "Sch.EN9",
 					"11": "Sch.EN10"
+				},
+				"6": {
+					"1": "Pinpad.Dialog"
 				}
 			}
 		},
@@ -1095,6 +1102,50 @@
 				"Zonerename.Zoneflag120": {
 					"joinId": 120,
 					"smartObjectId": 5
+				},
+				"Pinpad.N1": {
+					"joinId": 1,
+					"smartObjectId": 6
+				},
+				"Pinpad.N2": {
+					"joinId": 2,
+					"smartObjectId": 6
+				},
+				"Pinpad.N3": {
+					"joinId": 3,
+					"smartObjectId": 6
+				},
+				"Pinpad.N4": {
+					"joinId": 4,
+					"smartObjectId": 6
+				},
+				"Pinpad.N5": {
+					"joinId": 5,
+					"smartObjectId": 6
+				},
+				"Pinpad.N6": {
+					"joinId": 6,
+					"smartObjectId": 6
+				},
+				"Pinpad.N7": {
+					"joinId": 7,
+					"smartObjectId": 6
+				},
+				"Pinpad.N8": {
+					"joinId": 8,
+					"smartObjectId": 6
+				},
+				"Pinpad.N9": {
+					"joinId": 9,
+					"smartObjectId": 6
+				},
+				"Pinpad.N10": {
+					"joinId": 10,
+					"smartObjectId": 6
+				},
+				"Pinpad.N11": {
+					"joinId": 11,
+					"smartObjectId": 6
 				}
 			}
 		}

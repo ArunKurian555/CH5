@@ -2,7 +2,7 @@ import { Component, ViewChild, ElementRef, Inject } from '@angular/core';
 import { ChRouteService } from 'src/service/ch-route.service';
 import { DOCUMENT } from '@angular/common';
 import { ConfigService } from 'src/service/config.service';
-
+import { NumericKeyboardModule } from 'numeric-keyboard/dist/numeric_keyboard.angular';
 import { UserIdleService } from 'angular-user-idle';
 
 declare var CrComLib: any;
@@ -34,7 +34,7 @@ export class AppComponent {
 
   ngOnInit() {
 
-    this.rout.active = 0;
+    this.rout.active = 6;
     this.loadEmulator();
     let self = this;
 
@@ -47,7 +47,7 @@ export class AppComponent {
         self.activeflag1 = { 'display': 'none' };
       }
 
-      if (self.rout.active == 0) {
+      if (self.rout.active == 3 || self.rout.active == 2) {
         self.activeflag = { 'height': '91vh' };
 
         self.activeflag1 = { 'display': 'grid' };

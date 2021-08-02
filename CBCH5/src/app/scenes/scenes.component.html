@@ -15,14 +15,14 @@ justify-items: center;" >
 
 
 
-    <div class="loads" style="max-height: fit-content;">
+    <div class="loads" style="height: 25vh;">
       <p style="margin: 0em;
       font-size: 1em;">{{activezonelabel[activeZones[idx]]}}</p>
       <P style="margin: 0%; padding: 0% ;"></P>
       <ch5-button class="load-button"  type="secondary" shape="circle" iconClass="fas fa-lightbulb fa-3x "
         iconPosition="top" size="x-small" sendEventOnClick="{{activeZones[idx]*10-9}}"  receiveStateSelected="{{activeZones[idx]*10-9}}">Light
       </ch5-button>
-      <ch5-button class="load-button" type="secondary" shape="circle" size="x-small" 
+      <ch5-button class="em_button" type="secondary" shape="circle" size="x-small" 
         iconClass="fas fa-plug fa-3x" iconPosition="top" sendEventOnClick="{{activeZones[idx]*10-8}}" receiveStateSelected="{{activeZones[idx]*10-8}}">EM
       </ch5-button>
 
@@ -33,6 +33,10 @@ justify-items: center;" >
       iconPosition="top" size="x-small" sendEventOnClick="{{activeZones[idx]*10-6}}" receiveStateSelected="{{activeZones[idx]*10-6}}"  >Lock
     </ch5-button>
     </div>
+    <div class="allon">    <ch5-button class="load-button"  type="secondary" shape="rounded-rectangle" iconClass="fas fa-border-all fa-2x"
+    iconPosition="top" size="x-small" sendEventOnClick="{{activeZones[idx]*10-5}}" receiveStateSelected="{{activeZones[idx]*10-5}}"  >All On
+  </ch5-button>
+</div>
 
 
 

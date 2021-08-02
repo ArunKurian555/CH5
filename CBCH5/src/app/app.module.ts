@@ -37,6 +37,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { UserIdleModule } from 'angular-user-idle';
 import { View7Component } from './view7/view7.component';
 import { FpzonecontrolComponent } from './fpzonecontrol/fpzonecontrol.component';
+import { View8Component } from './view8/view8.component';
+import { NumericKeyboardModule } from 'numeric-keyboard/dist/numeric_keyboard.angular';
 
 const configuration: Partial<WebXPanelConfigParams> = { 
    // host: '', // defaults to window.location.host
@@ -75,9 +77,9 @@ WebXPanel.addEventListener(WebXPanelEvents.CONNECT_CIP, ({detail}) => {
   }); 
 
 @NgModule({
-  declarations: [AppComponent, ScenesComponent, UtilitiesComponent, View3Component, View4Component, View5Component, DmxpopComponent, AreapopComponent, EditnameComponent, EditorpageComponent, RamptimeComponent, ScenepopComponent, ConfirmationComponent, SettimeComponent, View6Component, View7Component, FpzonecontrolComponent],
+  declarations: [AppComponent, ScenesComponent, UtilitiesComponent,  View3Component, View4Component, View5Component, DmxpopComponent, AreapopComponent, EditnameComponent, EditorpageComponent, RamptimeComponent, ScenepopComponent, ConfirmationComponent, SettimeComponent, View6Component, View7Component, FpzonecontrolComponent, View8Component],
   imports: [BrowserModule, FontAwesomeModule, ScrollingModule, ColorSketchModule, NoopAnimationsModule, BrowserAnimationsModule, MatDialogModule, ColorChromeModule, MatSliderModule, FormsModule, MatGridListModule, MatSlideToggleModule, MatButtonModule, NgxMaterialTimepickerModule, DragDropModule,
-    UserIdleModule.forRoot({ idle: 100, timeout: 10, ping: 120 })],
+    UserIdleModule.forRoot({ idle: 600, timeout: 300, ping: 120 })],
   providers: [
     { provide: APP_BASE_HREF, useValue: './' },
     { provide: APP_INITIALIZER, useFactory: webXPanelFactory, multi: true },

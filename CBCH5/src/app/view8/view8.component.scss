@@ -1,0 +1,25 @@
+.Numpad
+{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 20em;
+    height: 25em;
+
+   }
+.last
+{
+    transform: translateX(6.8em);
+}
+
+.container
+{
+    width: 100vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+

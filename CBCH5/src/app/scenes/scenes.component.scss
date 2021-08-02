@@ -33,7 +33,7 @@ border-width: 2px;
 .load-button {
   display: grid;
   justify-items: center;
-  margin-bottom: 1em;
+  margin-bottom: 0em;
   
 }
 .blackiconcolor {background-color:black;}
@@ -54,7 +54,7 @@ width: 100vw;
 .scroller
 {
 
-height: 80vh;
+height: 85vh;
 width:100%;
 }
 
@@ -100,4 +100,15 @@ width:100%;
   position: absolute;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  }
+
+
+
+  .allon{
+    background-color:whitesmoke;
+    
+margin-left: 2px;
+transform: translate(0px,-.1em);
+
+
   }

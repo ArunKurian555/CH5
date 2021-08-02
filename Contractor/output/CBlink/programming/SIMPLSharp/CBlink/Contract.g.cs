@@ -37,6 +37,9 @@ namespace CBlink
         public CBlink.IZonerename Zonerename { get { return (CBlink.IZonerename)InternalZonerename; } }
         private CBlink.Zonerename InternalZonerename { get; set; }
 
+        public CBlink.IPinpad Pinpad { get { return (CBlink.IPinpad)InternalPinpad; } }
+        private CBlink.Pinpad InternalPinpad { get; set; }
+
         #endregion
 
         #region Construction and Initialization
@@ -63,6 +66,7 @@ namespace CBlink
             InternalZones = new CBlink.Zones(ComponentMediator, 3);
             InternalSch = new CBlink.Sch(ComponentMediator, 4);
             InternalZonerename = new CBlink.Zonerename(ComponentMediator, 5);
+            InternalPinpad = new CBlink.Pinpad(ComponentMediator, 6);
 
             for (int index = 0; index < devices.Length; index++)
             {
@@ -83,6 +87,7 @@ namespace CBlink
             InternalZones.AddDevice(device);
             InternalSch.AddDevice(device);
             InternalZonerename.AddDevice(device);
+            InternalPinpad.AddDevice(device);
         }
 
         public void RemoveDevice(BasicTriListWithSmartObject device)
@@ -92,6 +97,7 @@ namespace CBlink
             InternalZones.RemoveDevice(device);
             InternalSch.RemoveDevice(device);
             InternalZonerename.RemoveDevice(device);
+            InternalPinpad.RemoveDevice(device);
         }
 
         #endregion
@@ -112,6 +118,7 @@ namespace CBlink
             InternalZones.Dispose();
             InternalSch.Dispose();
             InternalZonerename.Dispose();
+            InternalPinpad.Dispose();
             ComponentMediator.Dispose(); 
         }
 

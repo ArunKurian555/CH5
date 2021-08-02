@@ -2,15 +2,21 @@
     <button style="float: left; background-color: #ffffff;" class="buttons" mat-fab (click)="onclick()">
         <mat-icon class="fas fa-lock fa-2x"></mat-icon>
     </button>
-    <!-- <button style="float: right; background-color: #ffffff;" class="buttons" mat-fab (click)="save()">
+    <button style="float: right; background-color: #ffffff;" class="buttons" mat-fab (click)="save()">
         <mat-icon>
             <p>Save</p>
         </mat-icon>
-    </button> -->
+    </button>
+    
     <div class="example-box" *ngFor="let item of items; index as i;" cdkDragBoundary=".example-boundary" cdkDrag
         [cdkDragStartDelay]="1000" (cdkDragEnded)="onDragEnded($event,i)" [cdkDragFreeDragPosition]="positionarray[i+1]"
         (click)="controlpop(i)">
-        {{i+1}} 
+        <ch5-button label="Area" receiveStateLabel="Area.AreaName{{i}}" class="AreaSelect" type="primary" stretch="both"
+        style="padding: 0; margin: 0; font-size: 1.5em; height: 2em; width: inherit;"
+        shape="rounded-rectangle">
+      </ch5-button>    
+    
+    
     </div>
 
 </div>

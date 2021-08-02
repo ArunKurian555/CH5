@@ -1,0 +1,15 @@
+<div class="container">
+<ch5-button receivestatelabel="Pinpad.Dialog" size="x-large" >
+</ch5-button>
+<div class="Numpad">
+  <div class="Num" *ngFor="let a of number; index as i;let last = last" [ngClass]="{'last' : last}">
+  <ch5-button label="{{a}}"
+  sendEventOnClick="Pinpad.N{{i+1}}"
+  type="primary"
+  shape="circle"
+   >
+</ch5-button>
+</div>
+</div>
+
+</div>

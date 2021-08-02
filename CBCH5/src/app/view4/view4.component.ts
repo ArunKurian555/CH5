@@ -1,6 +1,7 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 import { MatDialog } from '@angular/material/dialog';
+import { ChRouteService } from 'src/service/ch-route.service';
 import { AreapopComponent } from '../areapop/areapop.component';
 import { EditnameComponent } from '../editname/editname.component';
 import { RamptimeComponent } from '../ramptime/ramptime.component';
@@ -14,9 +15,16 @@ declare var CrComLib: any;
 
 
 export class View4Component implements OnInit {
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog,
+    public rout: ChRouteService,) { }
 
   ngOnInit(): void {
+
+  }
+  
+  onClick(id: number) {
+    let self = this;
+    this.rout.active = id - 1;
 
   }
 
