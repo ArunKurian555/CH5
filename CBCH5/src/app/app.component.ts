@@ -32,9 +32,9 @@ export class AppComponent {
 
 
   ngOnInit() {
-    this.rout.active = 6;
+   this.rout.active = 6;
  
-// test   this.rout.active = 3;
+ // test   this.rout.active = 1;
     
 //    this.loadEmulator();
     let self = this;
