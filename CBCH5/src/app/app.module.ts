@@ -38,7 +38,6 @@ import { UserIdleModule } from 'angular-user-idle';
 import { View7Component } from './view7/view7.component';
 import { FpzonecontrolComponent } from './fpzonecontrol/fpzonecontrol.component';
 import { View8Component } from './view8/view8.component';
-import { NumericKeyboardModule } from 'numeric-keyboard/dist/numeric_keyboard.angular';
 
 const configuration: Partial<WebXPanelConfigParams> = { 
    // host: '', // defaults to window.location.host

@@ -2,7 +2,6 @@ import { Component, ViewChild, ElementRef, Inject } from '@angular/core';
 import { ChRouteService } from 'src/service/ch-route.service';
 import { DOCUMENT } from '@angular/common';
 import { ConfigService } from 'src/service/config.service';
-import { NumericKeyboardModule } from 'numeric-keyboard/dist/numeric_keyboard.angular';
 import { UserIdleService } from 'angular-user-idle';
 
 declare var CrComLib: any;
@@ -33,9 +32,11 @@ export class AppComponent {
 
 
   ngOnInit() {
-
     this.rout.active = 6;
-    this.loadEmulator();
+ 
+// test   this.rout.active = 3;
+    
+//    this.loadEmulator();
     let self = this;
 
     setInterval(function () {

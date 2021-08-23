@@ -11,8 +11,8 @@
     <div class="example-box" *ngFor="let item of items; index as i;" cdkDragBoundary=".example-boundary" cdkDrag
         [cdkDragStartDelay]="1000" (cdkDragEnded)="onDragEnded($event,i)" [cdkDragFreeDragPosition]="positionarray[i+1]"
         (click)="controlpop(i)">
-        <ch5-button label="Area" receiveStateLabel="Area.AreaName{{i}}" class="AreaSelect" type="primary" stretch="both"
-        style="padding: 0; margin: 0; font-size: 1.5em; height: 2em; width: inherit;"
+        <ch5-button label="Area" receiveStateSelected="Area.AreaSelected{{i}}" receiveStateLabel="Area.AreaName{{i}}" class="AreaSelect" type="primary" stretch="both"
+        style="padding: 0; margin: 0; font-size: 1.5em; height: 12em; width: inherit;"
         shape="rounded-rectangle">
       </ch5-button>    
     

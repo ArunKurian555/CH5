@@ -18,7 +18,7 @@ export class View7Component implements OnInit {
   items = [1, 2, 3, 4, 5, 6];
 
   ngOnInit(): void {
-
+    let self = this;
 
     setTimeout(() => {
 
@@ -179,8 +179,11 @@ export class View7Component implements OnInit {
   controlpop(i) {
     CrComLib.publishEvent('b', "Area.AreaSelect" + i, true);
     CrComLib.publishEvent('b', "Area.AreaSelect" + i, false);
-    const dialogRef = this.dialog.open(FpzonecontrolComponent, {
-    });
+    
+    this.rout.active = 0;
+
+    // const dialogRef = this.dialog.open(FpzonecontrolComponent, {
+    // }); disable pop up
   }
 
   save() {
